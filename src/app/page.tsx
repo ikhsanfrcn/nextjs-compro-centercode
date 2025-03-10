@@ -11,7 +11,7 @@ export async function generateMetadata() {
   const currentUrl = `${siteUrl}`;
 
   return {
-    title: "CenterCode | Expert in Web & Mobile App Development, UI/UX Designer", // Fixed typo
+    title: "CenterCode | Expert in Web & Mobile App Development, UI/UX Designer",
     description: "CenterCode is a leading software development company specializing in web and mobile app development, UI/UX design, and innovative digital solutions. We craft seamless user experiences with cutting-edge technology. Let's build something great together!",
     openGraph: {
       title: "CenterCode | Expert in Web & Mobile App Development, UI/UX Design",
