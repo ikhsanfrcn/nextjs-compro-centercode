@@ -6,9 +6,9 @@ interface InputFieldProps {
   name: string;
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onBlur: (e: React.FocusEvent<HTMLInputElement>) => void;  // Add onBlur here
+  onBlur: (e: React.FocusEvent<HTMLInputElement>) => void; 
   required?: boolean;
-  error?: string;  // Error message (if any)
+  error?: string; 
 }
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -17,7 +17,7 @@ const InputField: React.FC<InputFieldProps> = ({
   name,
   value,
   onChange,
-  onBlur,  // Use the onBlur prop here
+  onBlur, 
   required,
   error,
 }) => (
@@ -31,13 +31,12 @@ const InputField: React.FC<InputFieldProps> = ({
       id={name}
       value={value}
       onChange={onChange}
-      onBlur={onBlur}  // Pass onBlur to the input element
+      onBlur={onBlur} 
       className={`mt-1 block w-full p-2 border rounded-md focus:ring-2 ${
         error ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500'
       }`}
       required={required}
     />
-    {/* Show error message if it exists */}
     {error && <p className="text-sm text-red-500 mt-1">{error}</p>}
   </div>
 );

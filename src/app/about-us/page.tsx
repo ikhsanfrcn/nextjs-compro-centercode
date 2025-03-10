@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col container mx-auto min-h-screen pt-15 gap-20">
-      <section className="flex max-sm:flex-col items-center max-sm:gap-5 justify-between">
+      <section className="flex max-sm:flex-col items-center max-sm:gap-5 justify-between mx-5">
         <Title className="">About Company</Title>
         <Image
-          src={"/about-vector.png"}
+          src={"/about-vector.webp"}
           width={0}
           height={0}
           sizes="100%"
@@ -17,9 +17,9 @@ export default function Home() {
           className="w-[200px] h-[200px] object-cover rounded-lg"
         />
       </section>
-      <section className="flex max-sm:flex-col max-sm:items-center justify-between gap-10 lg:gap-20">
+      <section className="flex max-sm:flex-col max-sm:items-center justify-between gap-10 lg:gap-20 mx-5">
         <Image
-          src={"/about.jpg"}
+          src={"/about.webp"}
           width={0}
           height={0}
           sizes="100%"

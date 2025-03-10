@@ -6,7 +6,7 @@ export const CTASection: React.FC = () => {
     <section className="md:flex md:relative justify-end items-center">
       <div className="md:relative md:w-[70%]">
         <Image
-          src="/serviceimage.png"
+          src="/serviceimage.webp"
           width={0}
           height={0}
           alt=""

@@ -18,7 +18,7 @@ export const NavbarLinks: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => {
   return (
     <div className={isMobile ? "space-y-1 px-2 pt-2 pb-3" : "flex space-x-4"}>
       {links.map(({ name, href }) => {
-        const isActive = pathname === href; // Cek apakah path saat ini sama dengan href
+        const isActive = pathname === href;
 
         return (
           <Button

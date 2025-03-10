@@ -3,7 +3,7 @@ import Image from "next/image"
 export const HeroImage: React.FC = () => {
     return (
         <Image
-        src="/heroimage.png"
+        src="/heroimage.webp"
         width={0}
         height={0}
         alt=""

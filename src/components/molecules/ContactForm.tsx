@@ -6,9 +6,9 @@ import TextArea from '../atoms/TextArea';
 import { Button } from '../atoms/Button';
 
 interface ContactFormProps {
-  formData: { name: string; email: string; message: string; phone: string };  // Add phone to formData
+  formData: { name: string; email: string; message: string; phone: string };  
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  handleSubmit: (values: any) => void;  // Update handleSubmit type
+  handleSubmit: (values: any) => void; 
   status: 'idle' | 'sending' | 'sent' | 'error';
   selectedMethod: 'email' | 'whatsapp';
   handleMethodChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -19,7 +19,7 @@ const validationSchema = Yup.object({
   email: Yup.string().email('Invalid email address').required('Email is required'),
   message: Yup.string().required('Message is required'),
   phone: Yup.string()
-    .matches(/^\+?[1-9]\d{1,14}$/, 'Phone number is not valid')  // Validate phone number format
+    .matches(/^\+?[1-9]\d{1,14}$/, 'Phone number is not valid') 
     .required('Phone number is required'),
 });
 
@@ -46,7 +46,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             onChange={handleChange}
             onBlur={handleBlur}
             required
-            error={touched.name && errors.name ? errors.name : undefined}  // Pass error as string or undefined
+            error={touched.name && errors.name ? errors.name : undefined}
           />
         </div>
         <div>
@@ -58,7 +58,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             onChange={handleChange}
             onBlur={handleBlur}
             required
-            error={touched.email && errors.email ? errors.email : undefined}  // Pass error as string or undefined
+            error={touched.email && errors.email ? errors.email : undefined} 
           />
         </div>
         <div>
@@ -70,7 +70,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             onChange={handleChange}
             onBlur={handleBlur}
             required
-            error={touched.phone && errors.phone ? errors.phone : undefined}  // Pass error as string or undefined
+            error={touched.phone && errors.phone ? errors.phone : undefined} 
           />
         </div>
         <div>
@@ -81,11 +81,9 @@ const ContactForm: React.FC<ContactFormProps> = ({
             onChange={handleChange}
             onBlur={handleBlur}
             required
-            error={touched.message && errors.message ? errors.message : undefined}  // Pass error as string or undefined
+            error={touched.message && errors.message ? errors.message : undefined}
           />
         </div>
-        
-        {/* Radio buttons to select method */}
         <div className="flex gap-5 mt-4">
           <div className="flex items-center">
             <input

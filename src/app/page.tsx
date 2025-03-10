@@ -19,7 +19,7 @@ export async function generateMetadata() {
       url: currentUrl,
       images: [
         {
-          url: "/about.jpg",
+          url: "/about.webp",
           width: 1200,
           height: 630,
           alt: "Compro Thumbnail",
@@ -32,7 +32,7 @@ export async function generateMetadata() {
       description: "CenterCode is a leading software development company specializing in web and mobile app development, UI/UX design, and innovative digital solutions. We craft seamless user experiences with cutting-edge technology. Let's build something great together!",
       images: [
         {
-          url: "/about.jpg",
+          url: "/about.webp",
           width: 1200,
           height: 630,
           alt: "Compro Thumbnail",

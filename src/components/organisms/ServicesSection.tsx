@@ -5,15 +5,15 @@ import { ServiceCard } from "../molecules/ServiceCard";
 export const ServicesSection: React.FC = () => {
   const servicesData = [
     {
-      image: "/webdevelopment.avif",
+      image: "/webdevelopment.webp",
       title: "Web Application",
     },
     {
-      image: "/mobileapp.jpg",
+      image: "/mobileapp.webp",
       title: "Mobile Application",
     },
     {
-      image: "/uiux.jpg",
+      image: "/uiux.webp",
       title: "UI/UX Design",
     },
   ];
@@ -22,7 +22,7 @@ export const ServicesSection: React.FC = () => {
     <div className="flex flex-col gap-10 justify-center items-center">
       <Title>What We Do?</Title>
 
-      <div className="flex justify-between container mx-auto">
+      <div className="flex max-sm:flex-col gap-5 max-sm:justify-center max-sm:items-center justify-between container mx-auto">
         {servicesData.map((service, index) => (
           <ServiceCard key={index} image={service.image} title={service.title} />
         ))}

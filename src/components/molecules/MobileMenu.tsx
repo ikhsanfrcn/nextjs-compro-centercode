@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Icon } from '../atoms/Icon';
 
 interface MobileMenuButtonProps {
   onClick: () => void;
@@ -13,7 +12,6 @@ export const MobileMenuButton: React.FC<MobileMenuButtonProps> = ({ onClick }) =
       aria-controls="mobile-menu"
       aria-expanded="false"
     >
-      {/* <Icon className="absolute -inset-0.5" /> */}
       <span className="sr-only">Open main menu</span>
       <svg
         className="block size-6"

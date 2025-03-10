@@ -3,9 +3,10 @@ import { Icon } from "../atoms/Icon";
 import { Subtitle } from "../atoms/Subtitle";
 import { Text } from "../atoms/Text";
 import LeafletMap from "../molecules/LeafletMap";
+import Link from "next/link";
 
 export const InformationSection: React.FC = () => {
-  const mapCenter = { lat:-6.922220, lng: 107.616054 };
+  const mapCenter = { lat: -6.92222, lng: 107.616054 };
   const zoomLevel = 17;
 
   return (
@@ -27,19 +28,27 @@ export const InformationSection: React.FC = () => {
         <div>
           <Subtitle>Contact Us</Subtitle>
           <div className="flex flex-col gap-5 pt-2">
-
-          <div className="flex gap-2 items-center">
-            <Icon Component={FaFacebook} className="text-2xl" />
-            <Text className="text-[#9F9F9F]">CenterCode</Text>
-          </div>
-          <div className="flex gap-2 items-center">
-            <Icon Component={FaInstagram} className="text-2xl" />
-            <Text className="text-[#9F9F9F]">CenterCode</Text>
-          </div>
-          <div className="flex gap-2 items-center">
-            <Icon Component={FaMailBulk} className="text-2xl" />
-            <Text className="text-[#9F9F9F]">service@centercode.com</Text>
-          </div>
+            <Link
+              href={"https://www.facebook.com/centercode.id/"}
+              className="flex gap-2 items-center"
+            >
+              <Icon Component={FaFacebook} className="text-2xl hover:text-blue-600" />
+              <Text className="text-[#9F9F9F] hover:text-black">CenterCode</Text>
+            </Link>
+            <Link
+              href={"https://www.instagram.com/centercode.id/"}
+              className="flex gap-2 items-center"
+            >
+              <Icon Component={FaInstagram} className="text-2xl hover:text-pink-600" />
+              <Text className="text-[#9F9F9F] hover:text-black">CenterCode</Text>
+            </Link>
+            <Link
+              href={"mailto:service@centercode.com"}
+              className="flex gap-2 items-center"
+            >
+              <Icon Component={FaMailBulk} className="text-2xl hover:text-gray-600" />
+              <Text className="text-[#9F9F9F] hover:text-black">service@centercode.com</Text>
+            </Link>
           </div>
         </div>
       </div>

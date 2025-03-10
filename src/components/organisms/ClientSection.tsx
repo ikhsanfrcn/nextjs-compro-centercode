@@ -2,19 +2,19 @@ import Image from "next/image";
 import { Title } from "../atoms/Title";
 
 const clients: string[] = [
-  "/mandiri.png",
-  "/amartha.png",
-  "/paxel.png",
-  "/wahyoo.png",
-  "/sisco.png",
-  "/hubble.png",
-  "/legoas.png",
-  "/cbn.png",
-  "/ciputra.png",
-  "/income.png",
-  "/lazada.png",
-  "/unair.png",
-  "/jawapos.png",
+  "/mandiri.webp",
+  "/amartha.webp",
+  "/paxel.webp",
+  "/wahyoo.webp",
+  "/sisco.webp",
+  "/hubble.webp",
+  "/legoas.webp",
+  "/cbn.webp",
+  "/ciputra.webp",
+  "/income.webp",
+  "/lazada.webp",
+  "/unair.webp",
+  "/jawapos.webp",
 ];
 export const ClientSection: React.FC = () => {
   return (
