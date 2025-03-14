@@ -8,7 +8,7 @@ export const WorkImage: React.FC = () => {
       height={0}
       sizes="100%"
       alt=""
-      className="w-full h-auto"
+      className="w-full md:w-[40%] lg:w-full h-auto"
     />
   );
 };
